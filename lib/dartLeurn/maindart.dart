@@ -7,9 +7,10 @@ class Order {
   String type ;
   Order(this.type);
 }
-void main() {
-
-
+void main () async {
+  print('1 Start');
+await Future.delayed(Duration(seconds: 5));
+print('2 Start');
   final order = new Order('cheken');
 
   final controller = new StreamController();
